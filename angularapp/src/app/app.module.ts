@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
 import { ConvertPipe } from './convert.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,8 +12,9 @@ import { ConvertPipe } from './convert.pipe';
   ],
   imports: [
     BrowserModule,
+
     FormsModule,
-        ReactiveFormsModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

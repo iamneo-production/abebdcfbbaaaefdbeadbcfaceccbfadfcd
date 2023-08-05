@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ConvertPipe implements PipeTransform {
 
-  transform(fromcurrency: number, toCurrency: number,amount: number): any {
+  transform(fromcurrency: number, toCurrency: number,amount: number): number {
       return Math.round(toCurrency*amount/fromcurrency) 
   }
 
